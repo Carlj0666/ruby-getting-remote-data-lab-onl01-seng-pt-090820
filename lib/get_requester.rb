@@ -13,14 +13,14 @@ CONVERTED_DATA = [{ 'name' => 'Daniel', 'occupation' => 'LG Fridge Salesman' }, 
   
   #attr_accessor :url
   
-  def initialize(url)
+  def initialize(URL)
     # binding.pry
-    @url = url
+    @url = URL
   end
   
   
   def get_response_body
-    uri = URI.parse(@url)
+    uri = URI.parse(URL)
     response = Net::HTTP.get_response_body(uri)
     response.body
   end
