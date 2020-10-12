@@ -20,6 +20,7 @@ class GetRequester
     response = Net::HTTP.get_response_body(uri)
     response.body
   end
+  end
   
   def parse_json
     # we use the JSON library to parse the API response into nicely formatted JSON
