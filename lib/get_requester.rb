@@ -13,7 +13,7 @@ CONVERTED_DATA = [{ 'name' => 'Daniel', 'occupation' => 'LG Fridge Salesman' }, 
   
   #attr_accessor :url
   
-  def initialize(URL)
+  def initialize(url)
     # binding.pry
     @url = URL
   end
