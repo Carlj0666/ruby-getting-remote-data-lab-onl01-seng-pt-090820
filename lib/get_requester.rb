@@ -15,12 +15,12 @@ CONVERTED_DATA = [{ 'name' => 'Daniel', 'occupation' => 'LG Fridge Salesman' }, 
   
   def initialize(url)
     # binding.pry
-    @url = URL
+    @url = url
   end
   
   
   def get_response_body
-    uri = URI.parse(URL)
+    uri = URI.parse(url)
     response = Net::HTTP.get_response_body(uri)
     response.body
   end
