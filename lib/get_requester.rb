@@ -14,12 +14,6 @@ class GetRequester
     @url = url
   end
   
-   def get_response_body
-    uri = URI.parse(url)
-    response = Net::HTTP.get_response_body(uri)
-    response.body
-  end
-  
   
   def parse_json
     # we use the JSON library to parse the API response into nicely formatted JSON
@@ -28,6 +22,15 @@ class GetRequester
     name["occupation"]  
     end
   end
+  
+   def get_response_body
+    uri = URI.parse(url)
+    response = Net::HTTP.get_response_body(uri)
+    response.body
+  end
+  
+  
+  
   
   
   
