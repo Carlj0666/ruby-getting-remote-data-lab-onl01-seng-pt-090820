@@ -24,7 +24,6 @@ class GetRequester
   def parse_json
     # we use the JSON library to parse the API response into nicely formatted JSON
     programs = JSON.parse(self.get_response_body)
-    end
   end
   
   
