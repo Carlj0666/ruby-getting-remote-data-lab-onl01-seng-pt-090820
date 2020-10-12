@@ -11,7 +11,7 @@ class GetRequester
   
   def initialize(url)
     # binding.pry
-    @url = URL
+    @url = url
   end
   
    def get_response_body
